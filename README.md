@@ -29,9 +29,9 @@ const md = require('markdown-it')().use(require('markdown-it-image-loading'));
 ## 参数
 
 * `loadingSrc` loading 图片 src 
-* `width` : loading 图片宽度
+* `loadingWidth` : loading 图片宽度
     - 默认：30
-* `height` : loading 图片高度
+* `loadingHeight` : loading 图片高度
     - 默认：30
 * `minWidth` : 图片最小宽度 `(图片的最小高度)`
     - 默认：100  
@@ -46,8 +46,8 @@ const md = require('markdown-it')().use(require('markdown-it-image-loading'));
 ```js 
 const md = require('markdown-it')().use(require('markdown-it-image-loading'), {
     loadingSrc: 'http://tangxiaomi.top/markdown-it-image-loading/loading.gif',
-    width: 30,
-    height: 30,
+    loadingWidth: 30,
+    loadingHeight: 30,
     minWidth: 100,
     minHeight: 100, 
     bgColor: '#000'
@@ -59,6 +59,6 @@ const md = require('markdown-it')().use(require('markdown-it-image-loading'), {
 可以给每一张图片单独设置样式
 
 ```html
-![](/){loadingSrc=http://tangxiaomi.top/markdown-it-image-loading/loading.gif width=50 height=50 minWidth=200 minHeight=200  bgColor=#ccc} 
+![](/){loadingSrc=http://tangxiaomi.top/markdown-it-image-loading/loading.gif loadingWidth=50 loadingHeight=50 minWidth=200 minHeight=200  bgColor=#ccc} 
 ```
-![](/){loadingSrc=http://tangxiaomi.top/markdown-it-image-loading/loading.gif width=50 height=50 minWidth=200 minHeight=200  bgColor=#ccc} 
+![](/){loadingSrc=http://tangxiaomi.top/markdown-it-image-loading/loading.gif loadingWidth=50 loadingHeight=50 minWidth=200 minHeight=200  bgColor=#ccc} 

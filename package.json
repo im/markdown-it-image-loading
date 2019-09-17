@@ -8,6 +8,9 @@
         "start": "vuepress dev --debug --no-clear-screen",
         "build": "vuepress build"
     },
+    "files": [
+        "index.js"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/im/markdown-it-image-loading.git"

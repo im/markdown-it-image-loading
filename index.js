@@ -4,8 +4,8 @@ const defaultLoadingImg = "data:image/gif;base64,R0lGODlhQABAAKUAAAQCBISChMTGxDw
 
 const defaultOptions = {
     loadingSrc: defaultLoadingImg,
-    width: 30,
-    height: 30,
+    loadingWidth: 30,
+    loadingHeight: 30,
     minWidth: 100,
     minHeight: 100,
     bgColor: ''
@@ -29,7 +29,7 @@ module.exports = function loading(md, options) {
 
         opts = Object.assign({ ...defaultOptions }, options, attrObj)
 
-        const style = `min-width: ${opts.minWidth}px;min-height: ${opts.minHeight}px;background:url(${opts.loadingSrc}) no-repeat center;background-size: ${opts.width}px ${opts.height}px;background-color:${opts.bgColor}`
+        const style = `min-width: ${opts.minWidth}px;min-height: ${opts.minHeight}px;background:url(${opts.loadingSrc}) no-repeat center;background-size: ${opts.loadingWidth}px ${opts.loadingHeight}px;background-color:${opts.bgColor}`
 
         token.attrSet('style', style);
 
