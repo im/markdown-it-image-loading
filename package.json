@@ -12,7 +12,13 @@
         "type": "git",
         "url": "git+https://github.com/im/markdown-it-image-loading.git"
     },
-    "keywords": [],
+    "keywords": [
+        "markdown",
+        "markdown-it",
+        "loading",
+        "markdown-image",
+        "markdown-it-plugin"
+    ],
     "author": "tangxiaomi",
     "license": "ISC",
     "bugs": {

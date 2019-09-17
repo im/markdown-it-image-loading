@@ -2,7 +2,16 @@
 
 # markdown-it-image-loading
 
-markdown 图片loading效果
+
+## 特点
+
+* markdown 图片loading效果
+* 可自定义loading图片
+* 支持markdown修改图片样式
+
+## 效果
+
+![](sss) 
 
 
 ## 安装
@@ -11,18 +20,11 @@ markdown 图片loading效果
 npm i markdown-it-image-loading
 ```
 
-
 ## 使用
 
 ```js
 const md = require('markdown-it')().use(require('markdown-it-image-loading'));
 ```
-
-
-## 默认效果
-
-![](sss) 
-
 
 ## 参数
 
@@ -43,7 +45,7 @@ const md = require('markdown-it')().use(require('markdown-it-image-loading'));
 
 ```js 
 const md = require('markdown-it')().use(require('markdown-it-image-loading'), {
-    loadingSrc: 'https://picsum.photos/300/150/?random',
+    loadingSrc: 'http://tangxiaomi.top/markdown-it-image-loading/loading.gif',
     width: 30,
     height: 30,
     minWidth: 100,
@@ -57,6 +59,6 @@ const md = require('markdown-it')().use(require('markdown-it-image-loading'), {
 可以给每一张图片单独设置样式
 
 ```html
-![](/){loadingSrc=/loading.gif width=50 height=50 minWidth=200 minHeight=200  bgColor=#ccc} 
+![](/){loadingSrc=http://tangxiaomi.top/markdown-it-image-loading/loading.gif width=50 height=50 minWidth=200 minHeight=200  bgColor=#ccc} 
 ```
-![](/){loadingSrc=/loading.gif width=50 height=50 minWidth=200 minHeight=200  bgColor=#ccc} 
+![](/){loadingSrc=http://tangxiaomi.top/markdown-it-image-loading/loading.gif width=50 height=50 minWidth=200 minHeight=200  bgColor=#ccc} 

@@ -13,7 +13,7 @@ const defaultOptions = {
 module.exports = function loading(md, options) {
     md.use(require('markdown-it-attrs'))
     var defaultImageRenderer = md.renderer.rules.image;
-    
+
     md.renderer.rules.image = function (tokens, idx, imageOptions, env, self) {
         let opts = {}
 
@@ -27,7 +27,7 @@ module.exports = function loading(md, options) {
             attrObj[v[0]] = v[1]
         })
 
-        opts = Object.assign({...defaultOptions}, options, attrObj)
+        opts = Object.assign({ ...defaultOptions }, options, attrObj)
 
         const style = `min-width: ${opts.minWidth}px;min-height: ${opts.minHeight}px;background:url(${opts.loadingSrc}) no-repeat center;background-size: ${opts.width}px ${opts.height}px;background-color:${opts.bgColor}`
 
