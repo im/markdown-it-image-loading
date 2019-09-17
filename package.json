@@ -1,6 +1,6 @@
 {
     "name": "markdown-it-image-loading",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "markdown 图片 loading 效果",
     "main": "index.js",
     "scripts": {
