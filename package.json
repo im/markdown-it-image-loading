@@ -1,20 +1,29 @@
 {
-  "name": "markdown-it-image-loading",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/im/markdown-it-image-loading.git"
-  },
-  "keywords": [],
-  "author": "tangxiaomi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/im/markdown-it-image-loading/issues"
-  },
-  "homepage": "https://github.com/im/markdown-it-image-loading#readme"
+    "name": "markdown-it-image-loading",
+    "version": "1.0.0",
+    "description": "markdown 图片 loading 效果",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "vuepress dev --debug --no-clear-screen",
+        "build": "vuepress build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/im/markdown-it-image-loading.git"
+    },
+    "keywords": [],
+    "author": "tangxiaomi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/im/markdown-it-image-loading/issues"
+    },
+    "homepage": "https://github.com/im/markdown-it-image-loading#readme",
+    "dependencies": {
+        "markdown-it-attrs": "^3.0.1"
+    },
+    "devDependencies": {
+        "vuepress": "^1.1.0",
+        "markdown-it": "^10.0.0"
+    }
 }
